@@ -12,10 +12,14 @@ body {
 
 /* general */
 
+.wrapper{
+  width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto;
   clear: both;
 }
 
@@ -140,12 +144,12 @@ h3, h2 {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 20px 10px 25px 10px;
   overflow: auto;
 }
 
 .work:nth-child(even) {
-  margin-right: 40px;
+  margin-right: 0px 20px;
 }
 
 .work img {
@@ -214,4 +218,50 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width:980px) {
+  
+  .wrapper{
+    width:100%;
+  }
+  .work{
+    width:30%;
+  }
+  #auth-image{
+    width:100%;
+  }
+  img{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .wrapper{
+    width:100%;
+  }
+  .work{
+    width:30%;
+  }
+  #auth-image{
+    width:100%;
+  }
+  img{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .wrapper{
+    width:100%;
+  }
+  .work{
+    width:100%;
+  }
+  #auth-image{
+    width:100%;
+  }
+  img{
+    width:100%;
+  }
 }
